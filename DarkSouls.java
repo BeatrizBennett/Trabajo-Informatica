@@ -53,7 +53,6 @@ public class DarkSouls {
                     equipo.add(o.nombre);
                     armaduraTotal+=o.defensa;
                     pesoAcumulado+= o.peso;
-                    System.out.println("Hola!");
                 }
             }
         }
