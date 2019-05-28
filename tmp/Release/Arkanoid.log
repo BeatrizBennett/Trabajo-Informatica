@@ -1,0 +1,11 @@
+﻿  Arkanoid.cpp
+D:\Universidad\Arkanoid\src\Arkanoid.cpp(2): fatal error C1083: No se puede abrir el archivo incluir: 'glut.h': No such file or directory
+  Caja.cpp
+  Esfera.cpp
+D:\Universidad\Arkanoid\src\Esfera.cpp(4): fatal error C1083: No se puede abrir el archivo incluir: 'glut.h': No such file or directory
+  Interaccion.cpp
+  Mundo.cpp
+D:\Universidad\Arkanoid\src\Mundo.cpp(2): fatal error C1083: No se puede abrir el archivo incluir: 'glut.h': No such file or directory
+  Pared.cpp
+D:\Universidad\Arkanoid\src\Pared.cpp(4): fatal error C1083: No se puede abrir el archivo incluir: 'glut.h': No such file or directory
+  Vector2D.cpp
