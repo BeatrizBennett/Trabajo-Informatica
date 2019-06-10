@@ -88,6 +88,7 @@
     <ClCompile Include="src\ColorRGB.cpp" />
     <ClCompile Include="src\Esfera.cpp" />
     <ClCompile Include="src\Interaccion.cpp" />
+    <ClCompile Include="src\Ladrillo.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Pared.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="src\ColorRGB.h" />
     <ClInclude Include="src\Esfera.h" />
     <ClInclude Include="src\Interaccion.h" />
+    <ClInclude Include="src\Ladrillo.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Pared.h" />
     <ClInclude Include="src\Vector2D.h" />
