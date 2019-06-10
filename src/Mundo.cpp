@@ -22,7 +22,7 @@ void Mundo::dibuja()
 	
 	esfera.dibuja();
 	caja.dibuja();
-	
+	ladrillo.dibuja();
 	
 	
 
@@ -31,6 +31,7 @@ void Mundo::dibuja()
 void Mundo::mueve()
 {
 	esfera.mueve(0.025f);
+	ladrillo.mueve(0.002f);
 	Interaccion::rebote(esfera, caja);
 	
 }

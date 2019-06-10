@@ -1,5 +1,6 @@
 #include "Caja.h"	
 #include "Esfera.h"	
+#include "Ladrillo.h"
 
 
 class Mundo
@@ -9,6 +10,7 @@ class Mundo
 	Caja caja;
 	Pared plataforma;
 	Esfera esfera;
+	Ladrillo ladrillo;
 
 	float x_ojo;
 	float y_ojo;
