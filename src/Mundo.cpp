@@ -25,7 +25,7 @@ void Mundo::dibuja()
 	caja.dibuja();
 	ladrillo.dibuja();
 	barra.dibuja();
-	
+	ladrillos.dibuja();
 	
 
 }
@@ -35,6 +35,7 @@ void Mundo::mueve()
 	esfera.mueve(0.025f);
 	ladrillo.mueve(0.002f);
 	barra.mueve(0.15f);
+	ladrillos.mueve(0.002f);
 	Interaccion::rebote(esfera, caja);
 	
 }
@@ -47,11 +48,15 @@ void Mundo::inicializa()
 
 	
 	
-
-	Esfera* e1 = new Esfera(1, 2, 4, 5, 15);
-	e1->setColor(200, 0, 0);
-	Esfera* e2 = new Esfera(2, -2, 4, -5, 15);
-	e2->setColor(255, 255, 255);
+	esfera.setRadio(1.0f);
+	for (int i = 1; i < 19; i++) { //barrido del eje de la x para ir dibujando ladrillos
+		for (int j = 10; j < 14; j++) { //barrido en el eje y para ir dibujando ladrillos
+			Ladrillo* aux = new Ladrillo(i - 10, j, 0, -1);
+			aux->setPos(i - 10, j);
+			aux->setColor(30 * i, 20 * j, 10 * i + 10 * j);
+			ladrillos.agregar(aux);
+		}
+	}
 	 
 }
 

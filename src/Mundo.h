@@ -2,6 +2,7 @@
 #include "Esfera.h"	
 #include "Ladrillo.h"
 #include "Barra.h"
+#include "ListaLadrillos.h"
 
 class Mundo
 {
@@ -12,6 +13,7 @@ class Mundo
 	Esfera esfera;
 	Ladrillo ladrillo;
 	Barra barra;
+	ListaLadrillos ladrillos;
 
 	float x_ojo;
 	float y_ojo;
