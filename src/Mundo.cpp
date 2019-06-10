@@ -37,6 +37,8 @@ void Mundo::mueve()
 	barra.mueve(0.15f);
 	ladrillos.mueve(0.002f);
 	Interaccion::rebote(esfera, caja);
+	Interaccion::rebote(barra, caja);
+	Interaccion::rebote(esfera, barra);
 	
 }
 
@@ -66,9 +68,18 @@ void Mundo::tecla(unsigned char key)
 }
 void Mundo::teclaEspecial(unsigned char key)
 {
+	switch (key)
+	{
+	case GLUT_KEY_LEFT:
+		barra.setVel(-1.0f, 0.0f);
+		break;
+	case GLUT_KEY_RIGHT:
+		barra.setVel(1.0f, 0.0f);
+		break;
+	}
 	
 }
 Mundo::~Mundo()
 {
-	
+	ladrillos.destruirContenido();
 }

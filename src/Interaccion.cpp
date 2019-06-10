@@ -1,5 +1,5 @@
 #include "Interaccion.h"
-#include <cmath>
+#include <math.h>
 
 Interaccion::Interaccion(void)
 {
@@ -16,7 +16,7 @@ Interaccion::~Interaccion(void)
 
 void Interaccion::rebote(Esfera& e, Caja c)
 {
-	rebote(e,c.suelo);
+	//rebote(e,c.suelo);
 	rebote(e,c.techo);
 	rebote(e,c.pared_dcha);
 	rebote(e,c.pared_izq);
@@ -33,6 +33,22 @@ bool Interaccion::rebote(Esfera &e, Pared p)
 		return true;
 		}
 	return false;
+}
+void Interaccion::rebote(Barra &b, Caja c)
+{
+	float xmax = c.suelo.limite2.x;
+	float xmin = c.suelo.limite1.x;
+	if ((b.posicion.x) > xmax - b.longitud)
+		b.posicion.x = xmax - b.longitud;
+	if ((b.posicion.x) < xmin + b.longitud)
+		b.posicion.x = xmin + b.longitud;
+}
+
+void Interaccion::rebote(Esfera& e, Barra b)
+{
+	rebote(e, b.Bpared_dcha);
+	rebote(e, b.Bpared_izq);
+	rebote(e, b.Btecho);
 }
 
 
