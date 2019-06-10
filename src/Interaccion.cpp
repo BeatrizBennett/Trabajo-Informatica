@@ -50,5 +50,18 @@ void Interaccion::rebote(Esfera& e, Barra b)
 	rebote(e, b.Bpared_izq);
 	rebote(e, b.Btecho);
 }
+bool Interaccion::colision(Esfera& e, Ladrillo& l)
+{
+	Vector2D dif = l.posicion - e.posicion;
+	float d = dif.modulo();
+	float dentro = d - (e.radio + l.radio);
 
+	if (dentro < 0.0f)//si hay colision
+	{
+		e.velocidad.x = -e.velocidad.x;
+		e.velocidad.y = -e.velocidad.y;
+		return true;
+	}
+	return false;
+}
 

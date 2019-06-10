@@ -5,6 +5,7 @@
 class Caja
 {
 	friend class Interaccion;
+	friend class Mundo;
 public:
 	void dibuja();
 	Caja();

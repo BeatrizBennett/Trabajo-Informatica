@@ -18,6 +18,6 @@ public:
 	void destruirContenido();
 	void eliminar(int index);
 	void eliminar(Ladrillo* l);
-	//Ladrillo* colision(Esfera* e);
+	Ladrillo* colision(Esfera* e);
 };
 

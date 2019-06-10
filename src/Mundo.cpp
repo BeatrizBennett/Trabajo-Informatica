@@ -39,6 +39,12 @@ void Mundo::mueve()
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(barra, caja);
 	Interaccion::rebote(esfera, barra);
+	Interaccion::colision(esfera, ladrillo);
+	Ladrillo* aux = ladrillos.colision(&esfera);
+	if (aux != 0) {//si algun ladrillo ha chocado
+		ladrillos.eliminar(aux);
+	}
+	if (Interaccion::rebote(esfera, caja.suelo) == true) { ladrillo.mueve(2.0f); }
 	
 }
 

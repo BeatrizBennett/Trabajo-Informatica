@@ -16,7 +16,7 @@ public:
 	static void rebote(Esfera& e, Caja c);
 	static void rebote(Barra &b, Caja c);
 	static void rebote(Esfera& e, Barra b);
-	//static bool Interaccion::colision(Esfera& e, Ladrillo& l);
+	static bool Interaccion::colision(Esfera& e, Ladrillo& l);
 
 
 };

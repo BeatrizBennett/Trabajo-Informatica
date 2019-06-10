@@ -55,7 +55,7 @@ void ListaLadrillos::eliminar(Ladrillo* l)
 			return;
 		}
 }
-/*Ladrillo* ListaLadrillos::colision(Esfera* e)
+Ladrillo* ListaLadrillos::colision(Esfera* e)
 {
 	for (int i = 0; i < numero; i++)
 	{
@@ -63,4 +63,4 @@ void ListaLadrillos::eliminar(Ladrillo* l)
 			return lista[i];
 	}
 	return 0; //no hay colisión*/
-
+}
