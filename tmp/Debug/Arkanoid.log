@@ -1,12 +1,1 @@
-﻿  Arkanoid.cpp
-  Caja.cpp
-  ColorRGB.cpp
-  Esfera.cpp
-  Interaccion.cpp
-  Ladrillo.cpp
-  Mundo.cpp
-  Pared.cpp
-  Vector2D.cpp
-  Generando código...
-  LINK : no se encontró C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
-  Arkanoid.vcxproj -> C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe
+﻿  Arkanoid.vcxproj -> C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe

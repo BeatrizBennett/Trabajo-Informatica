@@ -84,6 +84,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Arkanoid.cpp" />
+    <ClCompile Include="src\Barra.cpp" />
     <ClCompile Include="src\Caja.cpp" />
     <ClCompile Include="src\ColorRGB.cpp" />
     <ClCompile Include="src\Esfera.cpp" />
@@ -94,6 +95,7 @@
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Barra.h" />
     <ClInclude Include="src\Caja.h" />
     <ClInclude Include="src\ColorRGB.h" />
     <ClInclude Include="src\Esfera.h" />

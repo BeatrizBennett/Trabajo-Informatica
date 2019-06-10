@@ -4,6 +4,7 @@
 #include "Interaccion.h"
 #include <Pared.h>
 
+
 void Mundo::rotarOjo()
 {
 	float dist=sqrt(x_ojo*x_ojo+z_ojo*z_ojo);
@@ -23,6 +24,7 @@ void Mundo::dibuja()
 	esfera.dibuja();
 	caja.dibuja();
 	ladrillo.dibuja();
+	barra.dibuja();
 	
 	
 
@@ -32,6 +34,7 @@ void Mundo::mueve()
 {
 	esfera.mueve(0.025f);
 	ladrillo.mueve(0.002f);
+	barra.mueve(0.15f);
 	Interaccion::rebote(esfera, caja);
 	
 }
