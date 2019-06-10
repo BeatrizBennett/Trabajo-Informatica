@@ -1,7 +1,7 @@
 
 
 #include "Vector2D.h"
-#include <cmath>
+#include <math.h>
 
 Vector2D::Vector2D(float xv,float yv)
 {

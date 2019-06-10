@@ -8,10 +8,11 @@
 
 Esfera::Esfera()
 {
-	radio=1.0f;
-	aceleracion.y=-9.8f;
-	velocidad.x=4;
-	velocidad.y=4;
+	aceleracion.y = -9.8f;
+	velocidad.x = 4;
+	velocidad.y = 14;
+	posicion.x = 0.0f;
+	posicion.y = 2.0f;
 }
 
 Esfera::Esfera(float rad, float x, float y, float vx, float vy)

@@ -32,7 +32,7 @@ void Mundo::dibuja()
 
 void Mundo::mueve()
 {
-	esfera.mueve(0.025f);
+	esfera.mueve(0.01f);
 	ladrillo.mueve(0.002f);
 	barra.mueve(0.15f);
 	ladrillos.mueve(0.002f);
@@ -44,7 +44,10 @@ void Mundo::mueve()
 	if (aux != 0) {//si algun ladrillo ha chocado
 		ladrillos.eliminar(aux);
 	}
-	if (Interaccion::rebote(esfera, caja.suelo) == true) { ladrillo.mueve(2.0f); }
+	if (Interaccion::rebote(esfera, caja.suelo) == true) 
+	{ 
+		ladrillo.mueve(2.0f); 
+	}
 	
 }
 
