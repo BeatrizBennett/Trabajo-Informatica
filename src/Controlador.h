@@ -9,6 +9,7 @@ public:
 	void teclaEspecial(unsigned char key);
 	void mover();
 	void dibuja();
+	void inicializa();
 private:
 	enum Pantalla {INICIO,JUEGO,FINJUEGO,GAMEOVER};
 	Pantalla pantalla;

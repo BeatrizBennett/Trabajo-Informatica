@@ -1,4 +1,9 @@
-﻿  Mundo.cpp
-C:\Users\It\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3): warning C4005: 'MAX_LADRILLOS': redefinición de macro
-  C:\Users\It\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): note: vea la definición anterior de 'MAX_LADRILLOS'
-  Arkanoid.vcxproj -> C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe
+﻿  Arkanoid.cpp
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,1): warning C4005:  'MAX_LADRILLOS': redefinición de macro
+  Controlador.cpp
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): message :  vea la definición anterior de 'MAX_LADRILLOS'
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,1): warning C4005:  'MAX_LADRILLOS': redefinición de macro
+  Vector2D.cpp
+  Generando código...
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): message :  vea la definición anterior de 'MAX_LADRILLOS'
+  Arkanoid.vcxproj -> C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe

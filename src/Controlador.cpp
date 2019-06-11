@@ -122,3 +122,8 @@ void Controlador::mover()
 	if (pantalla == JUEGO)
 		miMundo.mueve();
 }
+
+void Controlador::inicializa() 
+{
+	miMundo.inicializa();
+}
