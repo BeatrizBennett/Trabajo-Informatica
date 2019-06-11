@@ -1,2 +1,4 @@
-﻿  Interaccion.cpp
+﻿  Mundo.cpp
+C:\Users\It\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3): warning C4005: 'MAX_LADRILLOS': redefinición de macro
+  C:\Users\It\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): note: vea la definición anterior de 'MAX_LADRILLOS'
   Arkanoid.vcxproj -> C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe

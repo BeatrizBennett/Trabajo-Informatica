@@ -6,7 +6,7 @@
 
 class ListaLadrillos
 {
-private:
+protected:
 	Ladrillo* lista[MAX_LADRILLOS];
 	int numero;
 public:

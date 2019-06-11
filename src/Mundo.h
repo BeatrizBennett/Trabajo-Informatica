@@ -4,6 +4,8 @@
 #include "Barra.h"
 #include "ListaLadrillos.h"
 #include "Jugador.h"
+#include "ListaLadrillosJuego.h"
+#include "ListaLadrillosVidas.h"
 #pragma once
 
 class Mundo
@@ -14,9 +16,9 @@ private:
 	Caja caja;
 	Pared plataforma;
 	Esfera esfera;
-	Ladrillo ladrillo;
 	Barra barra;
-	ListaLadrillos ladrillos;
+	ListaLadrillosJuego ladrillos;
+	ListaLadrillosVidas vidas;
 	Jugador jugador;
 
 	float x_ojo;

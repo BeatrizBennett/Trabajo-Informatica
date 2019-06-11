@@ -1,22 +1,16 @@
 #pragma once
 #include"Vector2D.h"
 #include "ColorRGB.h"
+#include "Ladrillo.h"
 
-class LadrillosVida
+class LadrillosVida : public Ladrillo
 {
-	friend class Interaccion;
-protected:
-	Vector2D posicion;
-	ColorRGB color;
-	float radio;
+	//friend class Interaccion;
+
 
 public:
 	LadrillosVida();
+	LadrillosVida(int i,int j);
 	~LadrillosVida();
-	void dibuja();
-	void setColor(Byte r, Byte v, Byte a);
-	void setPos(float ix, float iy);
-	Vector2D getPos();
-	float getCentro();
-	void setRadio(float f);
+	
 };
