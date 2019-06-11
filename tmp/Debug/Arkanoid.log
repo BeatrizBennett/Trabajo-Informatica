@@ -3,7 +3,11 @@ C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,
   Controlador.cpp
 C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): message :  vea la definición anterior de 'MAX_LADRILLOS'
 C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,1): warning C4005:  'MAX_LADRILLOS': redefinición de macro
-  Jugador.cpp
+  ListaLadrillos.cpp
+  ListaLadrillosJuego.cpp
+  ListaLadrillosVidas.cpp
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): message :  vea la definición anterior de 'MAX_LADRILLOS'
+C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,1): warning C4005:  'MAX_LADRILLOS': redefinición de macro
   Mundo.cpp
 C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillos.h(5): message :  vea la definición anterior de 'MAX_LADRILLOS'
 C:\Users\beatr\Documents\GitHub\Trabajo-Informatica\src\ListaLadrillosVidas.h(3,1): warning C4005:  'MAX_LADRILLOS': redefinición de macro

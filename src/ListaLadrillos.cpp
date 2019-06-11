@@ -59,3 +59,16 @@ Ladrillo* ListaLadrillos::colision(Esfera* e)
 	}
 	return 0; //no hay colisión*/
 }
+void ListaLadrillos::crear() 
+{
+	for (int i = 1; i < 19; i++) 
+	{ //barrido del eje de la x para ir dibujando ladrillos
+		for (int j = 10; j < 14; j++) 
+		{ //barrido en el eje y para ir dibujando ladrillos
+			Ladrillo* aux = new Ladrillo(i - 10, j);
+			aux->setPos(i - 10, j - 1);
+			aux->setColor(30 * i, 20 * j, 10 * i + 10 * j);
+			ListaLadrillos::agregar(aux);
+		}
+	}
+}
