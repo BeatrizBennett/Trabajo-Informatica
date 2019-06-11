@@ -55,6 +55,10 @@ void Mundo::mueve()
 		vidas.eliminar(jugador.getVida());
 		jugador.setVidas(jugador.getVida()-1);
 	}
+	if (jugador.getVida() < 0) 
+	{ 
+		jugador.gameover = true; 
+	}
 }
 
 void Mundo::inicializa()
@@ -63,17 +67,22 @@ void Mundo::inicializa()
 	y_ojo = 7.5;
 	z_ojo = 30;
 	jugador.setVidas(2);
-
-
+	jugador.gameover = false;
+	end = false;
+	esfera.setPos(0.0f, 2.0f);
 	esfera.setRadio(1.0f);
-	for (int i = 1; i < 19; i++) { //barrido del eje de la x para ir dibujando ladrillos
+	esfera.setVel(4, 14);
+	ladrillos.destruirContenido();
+	ladrillos.crear();
+	
+	/*for (int i = 1; i < 19; i++) { //barrido del eje de la x para ir dibujando ladrillos
 		for (int j = 10; j < 14; j++) { //barrido en el eje y para ir dibujando ladrillos
 			Ladrillo* aux = new LadrillosJuego(i - 10, j);
 			aux->setPos(i - 10, j-1);
 			aux->setColor(30 * i, 20 * j, 10 * i + 10 * j);
 			ladrillos.agregar(aux);
 		}
-	}
+	}*/
 	for (int i = 0; i < 3; i++) { //barrido del eje de la x para ir dibujando ladrillos
 
 		LadrillosVida* aux = new LadrillosVida(i-9, 14);
