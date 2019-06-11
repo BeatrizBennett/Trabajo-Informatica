@@ -61,4 +61,3 @@ bool Interaccion::colision(Esfera & e, Ladrillo & l)
 	}
 	return false;
 }
-

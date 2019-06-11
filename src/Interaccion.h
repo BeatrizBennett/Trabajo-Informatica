@@ -18,6 +18,8 @@ public:
 	static void rebote(Esfera& e, Barra b);
 	static bool Interaccion::colision(Esfera& e, Ladrillo& l);
 
+	bool colision(Esfera& e, Pared&);
+
 
 };
 

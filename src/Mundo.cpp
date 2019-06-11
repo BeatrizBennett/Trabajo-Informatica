@@ -50,8 +50,11 @@ void Mundo::mueve()
 	if (aux != 0) {//si algun ladrillo ha chocado
 		ladrillos.eliminar(aux);
 	}
-	jugador.setVidas(3);
-
+	if (Interaccion::rebote(esfera, caja.suelo)) {
+		Interaccion::rebote(esfera, caja.suelo);
+		vidas.eliminar(jugador.getVida());
+		jugador.setVidas(jugador.getVida()-1);
+	}
 }
 
 void Mundo::inicializa()
@@ -59,7 +62,7 @@ void Mundo::inicializa()
 	x_ojo = 0;
 	y_ojo = 7.5;
 	z_ojo = 30;
-
+	jugador.setVidas(2);
 
 
 	esfera.setRadio(1.0f);
