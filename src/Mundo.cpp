@@ -5,6 +5,7 @@
 #include <Pared.h>
 
 
+
 void Mundo::rotarOjo()
 {
 	float dist=sqrt(x_ojo*x_ojo+z_ojo*z_ojo);
@@ -30,6 +31,11 @@ void Mundo::dibuja()
 
 }
 
+Mundo::Mundo()
+{
+
+}
+
 void Mundo::mueve()
 {
 	esfera.mueve(0.01f);
@@ -48,6 +54,7 @@ void Mundo::mueve()
 	{ 
 		ladrillo.mueve(2.0f); 
 	}
+	jugador.setVidas(3);
 	
 }
 
@@ -68,6 +75,8 @@ void Mundo::inicializa()
 			ladrillos.agregar(aux);
 		}
 	}
+
+	
 	 
 }
 

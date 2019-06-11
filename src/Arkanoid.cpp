@@ -1,7 +1,9 @@
 #include "Mundo.h"
 #include "glut.h"
+#include "Controlador.h"
+#pragma once
 
-Mundo mundo;
+Controlador controlador;
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
@@ -34,7 +36,7 @@ int main(int argc, char* argv[])
 	glutKeyboardFunc(onKeyboardDown);
 	glutSpecialFunc(onSpecialKeyboardDown);
 
-	mundo.inicializa();
+	//controlador.inicializa(); //no es necesario, porque ya se inicializa cuando empiezas el juego a través del menu
 
 	//pasarle el control a GLUT,que llamara a los callbacks
 	glutMainLoop();
@@ -51,7 +53,7 @@ void onDraw(void)
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	mundo.dibuja();
+	controlador.dibuja();
 
 	//no borrar esta linea ni poner nada despues
 	glutSwapBuffers();
@@ -59,18 +61,18 @@ void onDraw(void)
 void onKeyboardDown(unsigned char key, int x_t, int y_t)
 {
 	//poner aqui el código de teclado
-	mundo.tecla(key);
+	controlador.tecla(key);
 
 	glutPostRedisplay();
 }
 void onSpecialKeyboardDown(int key, int x, int y)
 {
-	mundo.teclaEspecial(key);
+	controlador.teclaEspecial(key);
 }
 void onTimer(int value)
 {
 	//poner aqui el código de animacion
-	mundo.mueve();
+	controlador.mover(); //antes :controlador.mueve()
 
 	//no borrar estas lineas
 	glutTimerFunc(25, onTimer, 0);
