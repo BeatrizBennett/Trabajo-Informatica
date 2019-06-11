@@ -39,9 +39,7 @@ Mundo::Mundo()
 void Mundo::mueve()
 {
 	esfera.mueve(0.01f);
-	ladrillo.mueve(0.002f);
 	barra.mueve(0.15f);
-	ladrillos.mueve(0.002f);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(barra, caja);
 	Interaccion::rebote(esfera, barra);
@@ -49,10 +47,6 @@ void Mundo::mueve()
 	Ladrillo* aux = ladrillos.colision(&esfera);
 	if (aux != 0) {//si algun ladrillo ha chocado
 		ladrillos.eliminar(aux);
-	}
-	if (Interaccion::rebote(esfera, caja.suelo) == true) 
-	{ 
-		ladrillo.mueve(2.0f); 
 	}
 	jugador.setVidas(3);
 	
@@ -69,7 +63,7 @@ void Mundo::inicializa()
 	esfera.setRadio(1.0f);
 	for (int i = 1; i < 19; i++) { //barrido del eje de la x para ir dibujando ladrillos
 		for (int j = 10; j < 14; j++) { //barrido en el eje y para ir dibujando ladrillos
-			Ladrillo* aux = new Ladrillo(i - 10, j, 0, -1);
+			Ladrillo* aux = new Ladrillo(i - 10, j);
 			aux->setPos(i - 10, j);
 			aux->setColor(30 * i, 20 * j, 10 * i + 10 * j);
 			ladrillos.agregar(aux);

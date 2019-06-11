@@ -1,2 +1,2 @@
-﻿  Controlador.cpp
-LINK : fatal error LNK1168: no se puede abrir C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe para escritura
+﻿  Interaccion.cpp
+  Arkanoid.vcxproj -> C:\Users\It\Documents\GitHub\Trabajo-Informatica\bin\Arkanoid.exe

@@ -26,11 +26,6 @@ void ListaLadrillos::dibuja()
 	for (int i = 0; i < numero; i++)
 		lista[i]->dibuja();
 }
-void ListaLadrillos::mueve(float t)
-{
-	for (int i = 0; i < numero; i++)
-		lista[i]->mueve(t);
-}
 void ListaLadrillos::destruirContenido()
 {
 	for (int i = 0; i < numero; i++)

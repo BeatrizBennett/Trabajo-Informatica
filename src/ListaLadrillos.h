@@ -14,7 +14,6 @@ public:
 	virtual ~ListaLadrillos(void);
 	bool agregar(Ladrillo* l);
 	void dibuja();
-	void mueve(float t);
 	void destruirContenido();
 	void eliminar(int index);
 	void eliminar(Ladrillo* l);

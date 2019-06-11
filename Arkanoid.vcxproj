@@ -83,6 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ListaVidas.cpp" />
     <ClCompile Include="src\Arkanoid.cpp" />
     <ClCompile Include="src\Barra.cpp" />
     <ClCompile Include="src\Caja.cpp" />
@@ -92,6 +93,7 @@
     <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\Jugador.cpp" />
     <ClCompile Include="src\Ladrillo.cpp" />
+    <ClCompile Include="src\LadrillosVida.cpp" />
     <ClCompile Include="src\ListaLadrillos.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Pared.cpp" />
@@ -106,7 +108,9 @@
     <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\Jugador.h" />
     <ClInclude Include="src\Ladrillo.h" />
+    <ClInclude Include="src\LadrillosVida.h" />
     <ClInclude Include="src\ListaLadrillos.h" />
+    <ClInclude Include="src\ListaVidas.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Pared.h" />
     <ClInclude Include="src\Vector2D.h" />

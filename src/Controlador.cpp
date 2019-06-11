@@ -68,9 +68,9 @@ void Controlador::tecla(unsigned char key)
 	if (pantalla == INICIO)
 	{
 		printf("S para comenzar E para terminar");
-		if (key == 'S'||key=='s')
+		if (key == 'E'||key=='e')
 			exit(0);
-		else if (key == 'E'||key=='e')
+		else if (key == 'S'||key=='s')
 		{
 			miMundo.inicializa();
 			pantalla = JUEGO;
