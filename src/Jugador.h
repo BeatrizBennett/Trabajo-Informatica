@@ -9,6 +9,6 @@ public:
 	virtual ~Jugador();
 	int getVida();
 	void setVidas(int v);
-
+	bool gameover;
 };
 
